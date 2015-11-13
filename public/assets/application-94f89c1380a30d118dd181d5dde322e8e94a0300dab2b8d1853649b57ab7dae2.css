@@ -1,0 +1,110 @@
+/* line 6, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/background.scss */
+body {
+  margin: 0px 0px 0px 0px;
+}
+
+/* line 10, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/background.scss */
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -100;
+  display: block;
+  background-image: url("http://aspireblog.org/wp-content/uploads/2013/04/chalkboard.jpg");
+  width: 100%;
+  height: 100%;
+  /*
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    */
+}
+
+/* line 29, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/background.scss */
+.nav-bar {
+  width: 100%;
+  height: 115px;
+  float: left;
+  margin-bottom: 20px;
+}
+
+/* line 37, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/background.scss */
+.container {
+  position: fixed;
+  margin: auto;
+  display: flex;
+  left: 50%;
+  margin-top: 15px;
+  margin-left: -407px;
+}
+
+/* line 46, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/background.scss */
+.box {
+  width: 150px;
+  height: 75px;
+  border-radius: 10px;
+  margin: 5px;
+  display: inline-block;
+  background-color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 75px;
+}
+
+/* line 59, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/background.scss */
+.box:hover {
+  background-color: gray;
+}
+
+/* line 63, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/background.scss */
+.title {
+  font-size: 50px;
+  padding-left: 96px;
+  margin: auto;
+  /*top: 25%;
+  margin-top:-25px;*/
+  color: yellow;
+  font-family: courier;
+  margin-bottom: 20px;
+}
+
+/*
+div>div {
+    float: left;
+    margin 5px;
+}
+
+a:link, a:visited {
+    display: block;
+    width: 80px;
+    height: 50px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    margin:0 auto;
+}
+
+a:hover, a:active {
+    background-color: #7A991A;
+}
+*/
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

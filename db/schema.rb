@@ -16,8 +16,9 @@ ActiveRecord::Schema.define(version: 20151103211857) do
   create_table "answers", force: :cascade do |t|
     t.integer  "project_id"
     t.string   "answer"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "question_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "projects", force: :cascade do |t|
@@ -25,6 +26,7 @@ ActiveRecord::Schema.define(version: 20151103211857) do
     t.integer  "project_id"
     t.string   "title"
     t.string   "description"
+    t.string   "background"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
@@ -55,8 +57,9 @@ ActiveRecord::Schema.define(version: 20151103211857) do
   create_table "students", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "school_class_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "supplies", force: :cascade do |t|

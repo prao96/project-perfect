@@ -3,6 +3,7 @@ class CreateStudents < ActiveRecord::Migration
     create_table :students do |t|
       t.references :user
       t.string :name
+      t.references :school_class
       t.timestamps null: false
     end
   end
