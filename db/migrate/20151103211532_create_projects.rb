@@ -5,6 +5,7 @@ class CreateProjects < ActiveRecord::Migration
 	  t.integer :project_id
       t.string :title
       t.string :description
+      t.string :background
       t.timestamps null: false
     end
   end
