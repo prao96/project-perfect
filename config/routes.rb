@@ -2,8 +2,11 @@ Rails.application.routes.draw do
   root 'background#background'
 
   get 'login' => 'login#index'
-  get 'student' => 'student#landing'
+  get 'student/landing' => 'student#landing'
   get 'student/review' => 'student#review'
+  get 'student/project_home' => 'student#project_home'
+  get 'student/background' => 'student#background'
+  get 'student/suplies' => 'student#supplies'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
