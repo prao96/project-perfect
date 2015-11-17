@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'background#background'
+  root 'student#background'
 
   get 'login' => 'login#index'
   get 'student/landing' => 'student#landing'
