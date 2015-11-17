@@ -28,6 +28,7 @@ body {
 
 .my-nav {
   width: 840px;
+  margin-top:15px;
 }
 
 .nav-bar {
@@ -74,7 +75,8 @@ body {
 }
 
 .main {
-  height:100px;
+  height:575px;
+  border:solid red 10px;
 }
 
 /*

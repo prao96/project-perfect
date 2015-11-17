@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   root 'background#background'
+
+  get 'login' => 'login#index'
+  get 'student' => 'student#landing'
+  get 'student/review' => 'student#review'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
