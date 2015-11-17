@@ -7,6 +7,7 @@ class StudentController < ApplicationController
 	end
 
 	def background
+		render "student/background"
 	end
 
 	def supplies
