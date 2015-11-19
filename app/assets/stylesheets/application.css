@@ -87,6 +87,13 @@ body {
 .main {
   height:575px;
   border:solid red 5px;
+  text-align: center;
+  vertical-align: middle;
+  color:yellow;
+  font-size:36px;
+  /* the text things here (and also the nav arrows)
+  should have their own class! just added this here so you 
+  guys could see what I meant for the layout //Filippa */
 }
 
 .left {

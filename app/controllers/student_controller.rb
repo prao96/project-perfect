@@ -3,7 +3,7 @@ class StudentController < ApplicationController
 	def landing
 	end
 
-	def project_home
+	def project_step
 	end
 
 	def background
