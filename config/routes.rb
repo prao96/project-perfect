@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'student/review' => 'student#review'
   get 'student/project_home' => 'student#project_home'
   get 'student/background' => 'student#background'
-  get 'student/suplies' => 'student#supplies'
+  get 'student/supplies' => 'student#supplies'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
