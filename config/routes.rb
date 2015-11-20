@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'student/background' => 'student#background'
   get 'student/supplies' => 'student#supplies'
   get 'student/home' => 'student#home'
+  get 'student/navigation' => 'student#nav'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
