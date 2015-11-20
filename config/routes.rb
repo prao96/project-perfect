@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'background#background'
+  root 'student#background'
 
   get 'login' => 'login#index'
   get 'student/landing' => 'student#landing'
@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'student/project_step' => 'student#project_step'
   get 'student/background' => 'student#background'
   get 'student/supplies' => 'student#supplies'
+  get 'student/home' => 'student#home'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

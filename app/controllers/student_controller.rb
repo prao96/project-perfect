@@ -1,4 +1,7 @@
 class StudentController < ApplicationController
+
+	def student_home
+	end
 	
 	def landing
 	end
