@@ -9,3 +9,13 @@
 .past-projects {
 	height:200px;
 }
+
+.navigation {
+  font-size:35px;
+  margin:auto;
+  /*top: 25%;
+  margin-top:-25px;*/
+  color:white;
+  font-family:'Ubuntu';
+  margin-bottom: 30 px;
+}
