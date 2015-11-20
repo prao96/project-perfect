@@ -22,4 +22,7 @@ class StudentController < ApplicationController
 	def review
 	end
 
+	def nav
+	end
+
 end
