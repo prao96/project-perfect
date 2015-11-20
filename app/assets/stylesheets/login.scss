@@ -29,16 +29,21 @@ body {
   */
 }
 
+.container {
+	height:500px;
+}
+
 .logo {
 	position:fixed;
 	left-margin:-100px;
 }
 
 .form-signin {
-  position:relative;
   max-width: 330px;
   padding: 15px;
-  margin: 0 auto;
+  margin: 400px auto;
+  font-family:Ubuntu;
+  color:white;
 }
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
