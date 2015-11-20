@@ -1,6 +1,6 @@
-class LoginController < ApplicationController
+class LoginController < ActionController::Base
 
-def login
-end
+	def login
+	end
 
 end
