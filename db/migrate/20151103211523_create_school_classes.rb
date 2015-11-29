@@ -5,7 +5,6 @@ class CreateSchoolClasses < ActiveRecord::Migration
       t.integer :class_id
 	  t.integer :grade
 	  t.string  :school
-      t.timestamps null: false
     end
   end
 end

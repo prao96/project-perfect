@@ -14,11 +14,9 @@
 ActiveRecord::Schema.define(version: 20151103211857) do
 
   create_table "answers", force: :cascade do |t|
-    t.integer  "project_id"
-    t.string   "answer"
-    t.integer  "question_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer "project_id"
+    t.string  "answer"
+    t.integer "question_id"
   end
 
   create_table "projects", force: :cascade do |t|
@@ -27,63 +25,52 @@ ActiveRecord::Schema.define(version: 20151103211857) do
     t.string  "title"
     t.string  "description"
     t.string  "background"
+<<<<<<< HEAD
     t.string  "landing_image"
     t.string  "background_image"
+=======
+>>>>>>> b253738f6d6a6bc7fc6b97e149bc6d25586e2d74
   end
 
   create_table "questions", force: :cascade do |t|
-    t.integer  "project_id"
-    t.string   "question"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "project_id"
+    t.string  "question"
   end
 
   create_table "school_classes", force: :cascade do |t|
-    t.integer  "teacher_id"
-    t.integer  "class_id"
-    t.integer  "grade"
-    t.string   "school"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "teacher_id"
+    t.integer "class_id"
+    t.integer "grade"
+    t.string  "school"
   end
 
   create_table "steps", force: :cascade do |t|
-    t.integer  "project_id"
-    t.string   "step"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "project_id"
+    t.string  "step"
   end
 
   create_table "students", force: :cascade do |t|
-    t.integer  "user_id"
-    t.string   "name"
-    t.integer  "school_class_id"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.integer "user_id"
+    t.string  "name"
+    t.integer "school_class_id"
   end
 
   create_table "supplies", force: :cascade do |t|
-    t.integer  "project_id"
-    t.string   "supply"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "project_id"
+    t.string  "supply"
   end
 
   create_table "teachers", force: :cascade do |t|
-    t.integer  "user_id"
-    t.string   "name"
-    t.string   "grade_level"
-    t.string   "school_name"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer "user_id"
+    t.string  "name"
+    t.string  "grade_level"
+    t.string  "school_name"
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "username"
-    t.string   "password"
-    t.string   "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "username"
+    t.string "password"
+    t.string "email"
   end
 
 end
