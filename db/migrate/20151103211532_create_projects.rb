@@ -6,7 +6,8 @@ class CreateProjects < ActiveRecord::Migration
       t.string :title
       t.string :description
       t.string :background
-      t.timestamps null: false
+      t.string :landing_image
+      t.string :background_image
     end
   end
 end

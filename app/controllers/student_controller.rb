@@ -4,12 +4,14 @@ class StudentController < ApplicationController
 	end
 	
 	def landing
+		@project = Project.first
 	end
 
 	def project_step
 	end
 
 	def background
+		render "student/background"
 	end
 
 	def supplies

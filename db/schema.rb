@@ -22,13 +22,13 @@ ActiveRecord::Schema.define(version: 20151103211857) do
   end
 
   create_table "projects", force: :cascade do |t|
-    t.integer  "school_class_id"
-    t.integer  "project_id"
-    t.string   "title"
-    t.string   "description"
-    t.string   "background"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.integer "school_class_id"
+    t.integer "project_id"
+    t.string  "title"
+    t.string  "description"
+    t.string  "background"
+    t.string  "landing_image"
+    t.string  "background_image"
   end
 
   create_table "questions", force: :cascade do |t|
