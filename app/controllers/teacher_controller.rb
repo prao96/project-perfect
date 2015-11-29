@@ -1,16 +1,19 @@
 class TeacherController < ApplicationController
-
-	def supplies
-	end
 	
 	def landing 
 	end
 
-	def create_project
+	def brand_new_textedit
 	end
 
-	def manage_classes
+	def browse_existing
 	end
 
-	
+	def create_new_project
+	end
+
+	def project_created
+	end
+
+
 end

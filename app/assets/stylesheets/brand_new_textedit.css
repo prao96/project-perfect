@@ -9,3 +9,10 @@
   font-family:'Ubuntu';
   margin-bottom: 30 px;
 }
+
+.form-control {
+	font-size:20px;
+	color:black;
+	margin:auto;
+	font-family:'Ubuntu';
+}
