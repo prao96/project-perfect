@@ -15,6 +15,7 @@
  */
 body {
   margin:0px 0px 0px 0px;
+  background-color:black;
 }
 
 html, body {
@@ -31,13 +32,6 @@ html, body {
   background-image: url("http://aspireblog.org/wp-content/uploads/2013/04/chalkboard.jpg");
   width: 100%;
   height: 100%;
-/*
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-  */
 }
 
 .title {
@@ -45,30 +39,64 @@ html, body {
   margin:auto;
   /*top: 25%;
   margin-top:-25px;*/
-  color:white;
+  color:black;
   font-family: 'Ubuntu', sans-serif;
+  margin-top:20px;
   margin-bottom: 20px;
 }
 
-/*
-div>div {
-    float: left;
-    margin 5px;
+.my-nav {
+  width: 840px;
+  margin-top:15px;
 }
 
-a:link, a:visited {
-    display: block;
-    width: 80px;
-    height: 50px;
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    padding: 4px;
-    text-decoration: none;
-    margin:0 auto;
+.top {
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
 }
 
-a:hover, a:active {
-    background-color: #7A991A;
+.box {
+  width:150px;
+  height:75px;
+  border-radius:10px;
+  margin:5px;
+  display:inline-block;
+  background-color:gray;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 75px; 
 }
-*/
+
+.box:hover {
+  background-color:gray;
+}
+
+.main {
+  height:575px;
+  text-align: center;
+  vertical-align: middle;
+  color: black;
+  font-size:36px;
+  font-family: 'Ubuntu', sans-serif;
+  /* the text things here (and also the nav arrows)
+  should have their own class! just added this here so you 
+  guys could see what I meant for the layout //Filippa */
+}
+
+.left {
+  position:fixed;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 400px; 
+  font-size:100px;
+}
+
+.right {
+  position:fixed;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 400px; 
+  font-size:100px;
+}
