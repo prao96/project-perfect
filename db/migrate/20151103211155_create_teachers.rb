@@ -5,7 +5,6 @@ class CreateTeachers < ActiveRecord::Migration
       t.string :name
       t.string :grade_level
       t.string :school_name
-      t.timestamps null: false
     end
   end
 end

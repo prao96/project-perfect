@@ -4,7 +4,6 @@ class CreateStudents < ActiveRecord::Migration
       t.references :user
       t.string :name
       t.references :school_class
-      t.timestamps null: false
     end
   end
 end
