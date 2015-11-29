@@ -2,7 +2,7 @@
 	<%= stylesheet_link_tag "student_landing_page" %>
 <% end %>
 
-	<div class="title text-center"> Making Salt Crystals </div>
+	<div class="title text-center"> <!-- Making Salt Crystals --> <%=@project.title %></div>
 
 <div class="container-fluid" >
 	<div class="row">
@@ -15,7 +15,7 @@
 
 		<div class="col-xs-12 col-md-pull-1 col-md-5 main center1">
 			<img src="http://www.bigfoto.com/miscellaneous/photos-16/salt-crystals-94jf.jpg" alt="Mountain View" style="width:304px;height:228px;">	
-			<p>Have you ever wanted to learn how to make salt crystals on your own? Well here's your chance!</p>
+			<p><!-- Have you ever wanted to learn how to make salt crystals on your own? Well here's your chance! --><%=@project.description %></p>
 		 </div>
 		<div class="col-xs-12 col-md-pull-1 col-md-5 main center1"> 
 			<a href="/student/background">
