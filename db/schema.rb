@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(version: 20151103211857) do
     t.string  "title"
     t.string  "description"
     t.string  "background"
+    t.string  "landing_image"
+    t.string  "background_image"
   end
 
   create_table "questions", force: :cascade do |t|
