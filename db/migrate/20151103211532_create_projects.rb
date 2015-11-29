@@ -8,6 +8,7 @@ class CreateProjects < ActiveRecord::Migration
       t.string :background
       t.string :landing_image
       t.string :background_image
+      t.string :summary
     end
   end
 end

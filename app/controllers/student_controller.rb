@@ -11,16 +11,19 @@ class StudentController < ApplicationController
 	end
 
 	def background
+		@project = Project.first
 		render "student/background"
 	end
 
 	def supplies
+		@data = Supply.all
 	end
 
 	def step
 	end
 
 	def review
+		@project = Project.first
 	end
 
 	def nav

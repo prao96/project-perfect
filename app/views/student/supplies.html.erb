@@ -14,8 +14,10 @@
 		</a>
 
 		<div class="col-xs-12 col-md-pull-1 col-md-10 main center1"> 
-			<p>Water</p>
-			<p>Salt</p>
+			<% @data.each do |data| %>
+				<p><!-- Water --><%= data.supply %></p>
+				<!-- <p>Salt</p>  -->
+			<% end %>
 		</div>
 	</div>
 </div>
