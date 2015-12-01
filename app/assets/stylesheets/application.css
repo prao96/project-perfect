@@ -41,12 +41,6 @@ html, body {
   font-size:100px;
 }
 
-.navbar {
-    line-height: 75px;
-    height: 75px;
-    padding-top: 13px;
-}
-
 .title {
   font-size:50px;
   margin:auto;
