@@ -18,5 +18,10 @@ class TeacherController < ApplicationController
 	def title_and_background
 	end
 
+	def add_supplies
+	end
+
+	def add_steps
+	end
 
 end

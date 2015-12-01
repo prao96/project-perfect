@@ -22,3 +22,7 @@ Rails.application.config.assets.precompile += %w( teacher_landing.css )
 Rails.application.config.assets.precompile += %w( create_new_project.css )
 Rails.application.config.assets.precompile += %w( brand_new_textedit.css )
 Rails.application.config.assets.precompile += %w( browse_existing.css )
+Rails.application.config.assets.precompile += %w( title_and_background.css )
+Rails.application.config.assets.precompile += %w( add_supplies.css )
+Rails.application.config.assets.precompile += %w( add_steps.css )
+

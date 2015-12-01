@@ -1,8 +1,16 @@
 <% content_for :stylesheets do %>
-	<%= stylesheet_link_tag "brand_new_textedit" %>
+	<%= stylesheet_link_tag "title_and_background" %>
 <% end %>
 
 <div class="title text-center"> New Project </div>
+
+<div class="container-fluid directional" >
+	<div class="row">
+		<a href="/teacher/add_supplies">
+			<div class="col-xs-6 pull-right col-md-1 main right">></div>
+		</a>
+	</div>
+</div>
 
 
 <div class="container-fluid ">
@@ -10,23 +18,24 @@
 		<div class="col-md-10 col-md-offset-1">
 			<label for="ProjectTitle">Enter Title:</label>
 			<input type="text" class="form-control" id="ProjectTitle" rows="1" placeholder="Enter Project Title">
-	
+			<div class="space">
+			</div>	
 			<label for="ProjectDescription">Enter Project Description:</label>
 			<textarea class="form-control" id="ProjectDescription" rows="4" placeholder="Project Description"></textarea>
+			<div class="space"></div>
+
 			<div class="form-group">
     			<!-- <label for="exampleInputFile">File input</label> -->
     			<input type="file" id="exampleInputFile">
     			<p class="help-block">Upload a picture to show on the project description.</p>
   			</div>
+  			<div class="space"></div>
 
-  			<a href="/teacher/project_created">
-				<button type="submit" class="btn btn-primary">Create Project</button>
-			</a>
-
-			<a href="/teacher/project_created">
+			<a href="/teacher/add_supplies">
 				<button type="submit" class="btn btn-primary">Save Changes and Continue</button>
 			</a>
 
+			<div class="bottom-space"></div>
   		</div>
   	</div>
 </div>

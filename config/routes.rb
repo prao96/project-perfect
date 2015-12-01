@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   get 'teacher/browse_existing' => 'teacher#browse_existing'
   get 'teacher/project_created' => 'teacher#project_created'
   get 'teacher/title_and_background' => 'teacher#title_and_background'
+  get 'teacher/add_supplies' => 'teacher/add_supplies'
+   get 'teacher/add_steps' => 'teacher/add_steps'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
