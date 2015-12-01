@@ -1,0 +1,297 @@
+.space {
+	height:50px;
+}
+
+.bottom-space {
+	height:200px;
+}
+.space {
+	height:10px;
+}
+
+.bottom-space {
+	height:200px;
+}
+.form-group {
+	color:white;
+}
+.help-block{
+	color:white;
+}
+
+.navigation {
+  font-size:35px;
+  margin:auto;
+  /*top: 25%;
+  margin-top:-25px;*/
+  color:white;
+  font-family:'Sniglet';
+  margin-bottom: 30 px;
+}
+
+
+.current-projects {
+	height:200px;
+}
+
+.past-projects {
+	height:200px;
+}
+/* line 5, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+body {
+  margin: 0px 0px 0px 0px;
+}
+
+/* line 9, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.logo {
+  width: 100%;
+}
+
+/* line 13, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -100;
+  display: block;
+  background-image: url("http://aspireblog.org/wp-content/uploads/2013/04/chalkboard.jpg");
+  width: 100%;
+  height: 100%;
+  /*
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    */
+}
+
+/* line 32, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.container {
+  height: 500px;
+}
+
+/* line 36, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.logo {
+  position: fixed;
+  left-margin: -100px;
+}
+
+/* line 41, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 400px auto;
+  font-family: Sniglet;
+  color: white;
+}
+
+/* line 48, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+
+/* line 52, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.form-signin .checkbox {
+  font-weight: normal;
+}
+
+/* line 55, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* line 64, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+/* line 67, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* line 72, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+// Place all the styles related to the login controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.current-projects {
+	height:200px;
+}
+
+.past-projects {
+	height:200px;
+}
+// Place all the styles related to the studentLandingPage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.current-projects {
+	height:200px;
+}
+
+.past-projects {
+	height:200px;
+}
+
+.navigation {
+  font-size:35px;
+  margin:auto;
+  /*top: 25%;
+  margin-top:-25px;*/
+  color:white;
+  font-family:'Sniglet';
+  margin-bottom: 30 px;
+}
+.space {
+	height:50px;
+}
+
+.form-group {
+	color:white;
+	font-family: Sniglet;
+	font-size: 20px;
+}
+
+
+.bottom-space {
+	height:200px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+body {
+  margin:0px 0px 0px 0px;
+  background-color:black;
+}
+
+html, body {
+ height: 100%;
+}
+
+.directional {
+  position:fixed;
+  width:100%;
+}
+
+.left {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 400px; 
+  font-size:100px;
+}
+
+.right {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 400px; 
+  font-size:100px;
+}
+
+.title {
+  font-size:50px;
+  margin:auto;
+  /*top: 25%;
+  margin-top:-25px;*/
+  color:black;
+  font-family: 'Sniglet';
+  margin-top:20px;
+  color:#FFD930;
+  font-family: 'Sniglet';
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.my-nav {
+  width: 840px;
+  margin-top:15px;
+}
+
+.bottom {
+  z-index:1000;
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+}
+
+.box {
+  width:150px;
+  height:75px;
+  border-radius:10px;
+  margin:5px;
+  display:inline-block;
+  background-color:white; 
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 75px; 
+}
+
+.box:hover {
+  background-color:gray;
+}
+
+.main {
+  height:575px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-size:36px;
+  font-family: 'Sniglet';
+  /* the text things here (and also the nav arrows)
+  should have their own class! just added this here so you 
+  guys could see what I meant for the layout //Filippa */
+}
+
+.navigation {
+  font-size:35px;
+  margin:auto;
+  /*top: 25%;
+  margin-top:-25px;*/
+  color:black;
+  font-family:'Sniglet';
+  color:white;
+  font-family:'Sniglet';
+  margin-bottom: 30 px;
+}
+
+.background-image {
+  margin-top:-20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -100;
+
+  display: block;
+  background-image: url("http://aspireblog.org/wp-content/uploads/2013/04/chalkboard.jpg");
+  width: 100%;
+  height: 100%;
+}
