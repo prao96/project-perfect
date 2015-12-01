@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   get 'login' => 'login#index'
   get 'student/landing' => 'student#landing'
   get 'student/review' => 'student#review'
-  get 'student/project_step' => 'student#project_step'
+  # get 'student/project_step/:id' => 'student#project_step'
+  get 'student/project/:project_id/project_step/:id' => 'student#project_step'
+
+
   get 'student/background' => 'student#background'
   get 'student/supplies' => 'student#supplies'
   get 'student/home' => 'student#home'
@@ -16,8 +19,9 @@ Rails.application.routes.draw do
   get 'teacher/browse_existing' => 'teacher#browse_existing'
   get 'teacher/project_created' => 'teacher#project_created'
   get 'teacher/title_and_background' => 'teacher#title_and_background'
-  get 'teacher/add_supplies' => 'teacher/add_supplies'
-   get 'teacher/add_steps' => 'teacher/add_steps'
+  
+  post 'teacher/create_project' => 'teacher#create_project'
+
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

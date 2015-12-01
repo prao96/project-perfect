@@ -1,41 +1,33 @@
 <% content_for :stylesheets do %>
-	<%= stylesheet_link_tag "title_and_background" %>
+	<%= stylesheet_link_tag "brand_new_textedit" %>
 <% end %>
 
 <div class="title text-center"> New Project </div>
-
-<div class="container-fluid directional" >
-	<div class="row">
-		<a href="/teacher/add_supplies">
-			<div class="col-xs-6 pull-right col-md-1 main right">></div>
-		</a>
-	</div>
-</div>
 
 
 <div class="container-fluid ">
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
-			<label for="ProjectTitle">Enter Title:</label>
-			<input type="text" class="form-control" id="ProjectTitle" rows="1" placeholder="Enter Project Title">
-			<div class="space">
-			</div>	
-			<label for="ProjectDescription">Enter Project Description:</label>
-			<textarea class="form-control" id="ProjectDescription" rows="4" placeholder="Project Description"></textarea>
-			<div class="space"></div>
+			<%= form_tag(controller: "teacher", action: "create_project", method: "post") do %>
+				<div class="form-group">
+					<%= label_tag(:title, "Enter title:") %>
+					<%= text_field :title, nil, class: "form-control", id: "ProjectTitle" %>
+				</div>
 
-			<div class="form-group">
-    			<!-- <label for="exampleInputFile">File input</label> -->
-    			<input type="file" id="exampleInputFile">
-    			<p class="help-block">Upload a picture to show on the project description.</p>
-  			</div>
-  			<div class="space"></div>
+				<div class="form-group">
+					<%= label_tag(:description, "Enter project description:") %>
+				  	<%= text_area :description, nil, class:"form-control", id:"ProjectDescription" %>
+				</div>
 
-			<a href="/teacher/add_supplies">
-				 <button type="button" class="btn btn-default btn-lg">Save changes and continue</button>
-			</a>
+				<div class="form-group">
+					<%= label_tag(:description, "Upload a picture for the project description:") %>
+				</div>
 
-			<div class="bottom-space"></div>
-  		</div>
-  	</div>
+				<%= submit_tag("Create Project") %>
+			<% end %>
+		</div>
+	</div>
+</div>
+
+
 </div>
