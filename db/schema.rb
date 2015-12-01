@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 20151103211857) do
   create_table "steps", force: :cascade do |t|
     t.integer "project_id"
     t.string  "step"
+    t.integer "step_number"
   end
 
   create_table "students", force: :cascade do |t|

@@ -18,18 +18,18 @@
 			<p><!-- Have you ever wanted to learn how to make salt crystals on your own? Well here's your chance! --><%=@project.description %></p>
 		 </div>
 		<div class="col-xs-12 col-md-pull-1 col-md-5 main center1"> 
-			<a href="/student/background">
+			<%= link_to controller: "student", id: @project.id, action: "background" do %>
 				<div class="navigation">Background</div>
-			</a>
-			<a href="/student/supplies">
+			<% end %>
+			<%= link_to controller: "student", project_id: @project.id, action: "supplies" do %>
 				<div class="navigation">Supplies</div>
-			</a>
-			<a href="/student/project/1/project_step/1">	
+			<% end %>
+			<%= link_to controller: "student", project_id: @project.id, action: "project_step", step_number: 1 do %>
 				<div class="navigation">Step 1</div>
-			</a>
-			<a href="/student/review">
+			<% end %>
+			<%= link_to controller: "student", id: @project.id, action: "review" do %>
 				<div class="navigation">Review/Submit</div>
-			</a>
+			<% end %>
 		</div>
 	</div>
 </div>
