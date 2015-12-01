@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20151103211857) do
     t.string  "landing_image"
     t.string  "background_image"
     t.string  "summary"
+    t.integer "number_of_steps"
   end
 
   create_table "questions", force: :cascade do |t|

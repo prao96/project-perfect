@@ -10,8 +10,7 @@ class StudentController < ApplicationController
 
 	def project_step
 		@step = Step.where(project_id: params[:project_id], step_number: params[:step_number])
-		puts "Reading"
-		puts @step
+		@number_of_steps = Project.where(id: params[:project_id]).select("number_of_steps")
 	end
 
 	def background
