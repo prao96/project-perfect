@@ -14,3 +14,4 @@ Supply.create({project_id: 1, supply: 'Water'})
 Supply.create({project_id: 1, supply: 'Salt'})
 Step.create({project_id: 1, step: 'In this step we will dissolve salt in water. Add 1000mL of water in to your large container. Add 10g of salt into the container. Use spoon to mix salt in.'})
 Step.create({project_id: 1, step: 'Hey this is a test.'})
+

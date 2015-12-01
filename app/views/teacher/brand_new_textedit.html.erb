@@ -1,0 +1,62 @@
+<% content_for :stylesheets do %>
+	<%= stylesheet_link_tag "brand_new_textedit" %>
+<% end %>
+
+<div class="title text-center"> New Project </div>
+
+<div class="container-fluid ">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<label for="ProjectTitle">Enter Title:</label>
+			<input type="text" class="form-control" id="ProjectTitle" rows="1" placeholder="Title">
+	
+			<label for="ProjectDescription">Enter Project Description:</label>
+			<textarea class="form-control" id="ProjectDescription" rows="4" placeholder="Project Description"></textarea>
+			<div class="form-group">
+    			<label for="exampleInputFile">File input</label>
+    			<input type="file" id="exampleInputFile">
+    			<p class="help-block">Upload a picture to show on the project description.</p>
+  			</div>
+
+			<label for="ProjectDescription">Enter Background:</label>
+			<textarea class="form-control" id="ProjectBackground" rows="4" placeholder="Background"></textarea>
+			<div class="form-group">
+    			<label for="exampleInputFile">File input</label>
+    			<input type="file" id="exampleInputFile">
+    			<p class="help-block">Upload a picture to show on the project background.</p>
+  			</div>
+
+  			<label for="Supplies">Enter Supplies:</label>
+			<input type="text" class="form-control" id="Supplies" placeholder="Supplies">
+
+
+			<label for="Step">Enter First Step:</label>
+			<textarea class="form-control" id="Step" rows="4" placeholder="Step 1"></textarea>
+			<div class="form-group">
+    			<label for="exampleInputFile">File input</label>
+    			<input type="file" id="exampleInputFile">
+    			<p class="help-block">Upload a picture to show on the first step of the project.</p>
+  			</div>
+
+  			<label for="Step">Enter Second Step:</label>
+			<textarea class="form-control" id="Step" rows="4" placeholder="Step 2"></textarea>
+			<div class="form-group">
+    			<label for="exampleInputFile">File input</label>
+    			<input type="file" id="exampleInputFile">
+    			<p class="help-block">Upload a picture to show on the second step of the project.</p>
+  			</div>
+
+  			<label for="Step">Enter Third Step:</label>
+			<textarea class="form-control" id="Step" rows="4" placeholder="Step 3"></textarea>
+			<div class="form-group">
+    			<label for="exampleInputFile">File input</label>
+    			<input type="file" id="exampleInputFile">
+    			<p class="help-block">Upload a picture to show on the third step of the project.</p>
+  			</div>
+
+  			<a href="/teacher/project_created">
+				<button type="submit" class="btn btn-primary">Create Project</button>
+			</a>
+		</div>
+	</div>
+</div>
