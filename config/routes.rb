@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   get 'login' => 'login#index'
   get 'student/landing' => 'student#landing'
   get 'student/review' => 'student#review'
-  get 'student/project_step/:id' => 'student#project_step'
-  # get 'student/project/:project_id/project_step/:id' => 'student#project_step'
+  # get 'student/project_step/:id' => 'student#project_step'
+  get 'student/project/:project_id/project_step/:id' => 'student#project_step'
 
 
   get 'student/background' => 'student#background'
