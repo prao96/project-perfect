@@ -20,6 +20,8 @@ Rails.application.routes.draw do
   get 'teacher/browse_existing' => 'teacher#browse_existing'
   get 'teacher/project_created' => 'teacher#project_created'
   get 'teacher/title_and_background' => 'teacher#title_and_background'
+  get 'teacher/teacher_nav' => 'teacher#teacher_nav'
+  get 'teacher/teacher_not_implemented' => 'teacher#teacher_not_implemented'
   
   post 'teacher/create_project' => 'teacher#create_project'
 
