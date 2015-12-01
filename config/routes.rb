@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'student#home'
 
   get 'login' => 'login#index'
+
   get 'student/project/:id/landing' => 'student#landing'
   get 'student/project/:id/review' => 'student#review'
   # get 'student/project_step/:id' => 'student#project_step'
