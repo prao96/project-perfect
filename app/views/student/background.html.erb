@@ -44,12 +44,12 @@
 
 <div class="container-fluid directional" >
 	<div class="row">
-		<a href="/student/home">
+		<%= link_to controller: "student", id: @project.id, action: "landing" do %>
 			<div class="col-xs-6 col-md-1 main left"><</div>
-		</a>
-		<a href="/student/background">
+		<% end %>
+		<%= link_to controller: "student", project_id: @project.id, action: "supplies" do %>
 			<div class="col-xs-6 pull-right col-md-1 main right">></div>
-		</a>
+		<% end %>
 	</div>
 </div>
 

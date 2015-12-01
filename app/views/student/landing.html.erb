@@ -24,9 +24,11 @@
 			<%= link_to controller: "student", project_id: @project.id, action: "supplies" do %>
 				<div class="navigation">Supplies</div>
 			<% end %>
-			<%= link_to controller: "student", project_id: @project.id, action: "project_step", step_number: 1 do %>
-				<div class="navigation">Step 1</div>
-			<% end %>
+			<% @project.number_of_steps.times do |val| %>
+				<%= link_to controller: "student", project_id: @project.id, action: "project_step", step_number: val+1 do %>
+					<div class="navigation">Step <%= val+1 %></div>
+				<% end %>
+			<%  end %>
 			<%= link_to controller: "student", id: @project.id, action: "review" do %>
 				<div class="navigation">Review/Submit</div>
 			<% end %>

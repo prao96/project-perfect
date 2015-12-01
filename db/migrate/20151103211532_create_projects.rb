@@ -9,6 +9,7 @@ class CreateProjects < ActiveRecord::Migration
       t.string :landing_image
       t.string :background_image
       t.string :summary
+      t.integer :number_of_steps
     end
   end
 end
