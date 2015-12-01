@@ -2,14 +2,15 @@ Rails.application.routes.draw do
   root 'student#home'
 
   get 'login' => 'login#index'
-  get 'student/landing' => 'student#landing'
-  get 'student/review' => 'student#review'
+
+  get 'student/project/:id/landing' => 'student#landing'
+  get 'student/project/:id/review' => 'student#review'
   # get 'student/project_step/:id' => 'student#project_step'
-  get 'student/project/:project_id/project_step/:id' => 'student#project_step'
+  get 'student/project/:project_id/project_step/:step_number' => 'student#project_step'
 
 
-  get 'student/background' => 'student#background'
-  get 'student/supplies' => 'student#supplies'
+  get 'student/project/:id/background' => 'student#background'
+  get 'student/project/:project_id/supplies' => 'student#supplies'
   get 'student/home' => 'student#home'
   get 'student/navigation' => 'student#nav'
   get 'student/not_implemented' => 'student#not_implemented'

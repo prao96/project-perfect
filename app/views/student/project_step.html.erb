@@ -2,7 +2,7 @@
 	<%= stylesheet_link_tag "student_step_page" %>
 <% end %>
 
-<div class="title text-center"> Step 1 </div>
+<div class="title text-center"> Step <%= @step.first.step_number %> </div>
 
 <div class="container-fluid" >
 	<div class="row">
@@ -14,13 +14,9 @@
 		<a>
 
 		<div class="col-xs-12 col-md-pull-1 col-md-5 main center1"> 
-			In this step we will dissolve salt in water.
 
-			Add 1000mL of water in to your large container.
+			<%= @step.first.step %>
 
-			Add 10g of salt into the container.
-
-			Use spoon to mix salt in.
 		</div>
 		<div class="col-xs-12 col-md-pull-1 col-md-5 main center1"> 
 			<img src="<%= asset_path( 'salt_step.png' ) %>" alt="NaCl" style="width:333px;height:226px;">	
