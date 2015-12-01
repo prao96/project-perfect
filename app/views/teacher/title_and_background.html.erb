@@ -8,25 +8,28 @@
 <div class="container-fluid ">
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
-			<label for="ProjectTitle">Enter Title:</label>
-			<input type="text" class="form-control" id="ProjectTitle" rows="1" placeholder="Enter Project Title">
-	
-			<label for="ProjectDescription">Enter Project Description:</label>
-			<textarea class="form-control" id="ProjectDescription" rows="4" placeholder="Project Description"></textarea>
-			<div class="form-group">
-    			<!-- <label for="exampleInputFile">File input</label> -->
-    			<input type="file" id="exampleInputFile">
-    			<p class="help-block">Upload a picture to show on the project description.</p>
-  			</div>
+			<%= form_tag(controller: "teacher", action: "create_project", method: "post") do %>
+				<div class="form-group">
+					<%= label_tag(:title, "Enter title:") %>
+					<%= text_field :title, nil, class: "form-control", id: "ProjectTitle" %>
+				</div>
 
-  			<a href="/teacher/project_created">
-				<button type="submit" class="btn btn-primary">Create Project</button>
-			</a>
+				<div class="form-group">
+					<%= label_tag(:description, "Enter project description:") %>
+				  	<%= text_area :description, nil, class:"form-control", id:"ProjectDescription" %>
+				</div>
 
-			<a href="/teacher/project_created">
-				<button type="submit" class="btn btn-primary">Save Changes and Continue</button>
-			</a>
+				<div class="form-group">
+					<%= label_tag(:description, "Upload a picture for the project description:") %>
+<!-- 	<%= text_area :description, nil, class:"form-control", id:"ProjectDescription" %>  -->				</div>
 
-  		</div>
-  	</div>
+<!-- 				<input type="file" id="exampleInputFile">
+    			<p class="help-block">Upload a picture to show on the project description.</p> -->
+				<%= submit_tag("Create Project") %>
+			<% end %>
+		</div>
+	</div>
+</div>
+
+
 </div>
