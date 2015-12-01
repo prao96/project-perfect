@@ -11,39 +11,48 @@
 			<%= form_tag(controller: "teacher", action: "create_project", method: "post") do %>
 				<div class="form-group">
 					<%= label_tag(:title, "Enter title:") %>
-					<%= text_field :title, nil, class: "form-control", id: "ProjectTitle" %>
+					<%= text_field :title, nil, class: "form-control", id: "ProjectTitle", placeholder: "Title" %>
 				</div>
 
 				<div class="form-group">
 					<%= label_tag(:description, "Enter project description:") %>
-				  	<%= text_area :description, nil, class:"form-control", id:"ProjectDescription" %>
+				  	<%= text_area :description, nil, class:"form-control", id:"ProjectDescription", rows: "4", placeholder: "Description" %>
 				</div>
 
 				<div class="form-group">
-					<%= label_tag(:description, "Upload a picture for the project description:") %>
+					<%= label_tag("Upload a picture for the description:") %>
+	    			<input type="file" id="exampleInputFile">
+  				</div>
+
+  				<div class="form-group">
+					<%= label_tag(:background, "Enter project background:") %>
+				  	<%= text_area :background, nil, class:"form-control", id:"ProjectBackground", rows: "4", placeholder: "Background" %>
 				</div>
+
+				<div class="form-group">
+					<%= label_tag("Upload a picture for the background:") %>
+	    			<input type="file" id="exampleInputFile">
+  				</div>
 
 				<div class = "form-group">
 					<%= label_tag(:supply, "Enter supply:") %>
-					<%= text_field :supply, nil, class: "form-control", id: "Supply" %>
+					<%= text_field :supply, nil, class: "form-control", id: "Supply", placeholder: "Supply" %>
+				</div>
+
+				<div class="form-group">
+					<%= label_tag(:step, "Enter a step:") %>
+				  	<%= text_area :step, nil, class:"form-control", id:"Step", rows: "4", placeholder: "Step" %>
 				</div>
 
 
-
-			<label for="Supplies">Enter Supplies:</label>
-			<input type="text" class="form-control" id="Supplies" placeholder="Supply">
-
-			
-			<label for="Step">Enter First Step:</label>
-			<textarea class="form-control" id="Step" rows="4" placeholder="Enter First Step"></textarea>
 			<div class="form-group">
-    			<!-- <label for="exampleInputFile">File input</label> -->
+				<%= label_tag("Upload a picture for the step:") %>
     			<input type="file" id="exampleInputFile">
-    			<p class="help-block">Upload a picture to show on the first step of the project.</p>
   			</div>
 
-
   			<%= submit_tag("Create Project") %>
+
+  			<div class = "bottom-space"></div>
 
 			<% end %>
 		</div>
