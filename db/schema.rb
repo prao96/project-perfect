@@ -25,11 +25,8 @@ ActiveRecord::Schema.define(version: 20151103211857) do
     t.string  "title"
     t.string  "description"
     t.string  "background"
-<<<<<<< HEAD
     t.string  "landing_image"
     t.string  "background_image"
-=======
->>>>>>> b253738f6d6a6bc7fc6b97e149bc6d25586e2d74
   end
 
   create_table "questions", force: :cascade do |t|
