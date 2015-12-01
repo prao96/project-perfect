@@ -41,12 +41,6 @@ html, body {
   font-size:100px;
 }
 
-.navbar {
-    line-height: 75px;
-    height: 75px;
-    padding-top: 13px;
-}
-
 .title {
   font-size:50px;
   margin:auto;
@@ -54,6 +48,8 @@ html, body {
   margin-top:-25px;*/
   color:black;
   font-family: 'Sniglet';
+  margin-top:20px;
+  color:yellow;
   margin-bottom: 20px;
 }
 
@@ -62,7 +58,8 @@ html, body {
   margin-top:15px;
 }
 
-.top {
+.bottom {
+  z-index:1000;
   position: fixed;
   bottom: 15px;
   width: 100%;
@@ -74,7 +71,7 @@ html, body {
   border-radius:10px;
   margin:5px;
   display:inline-block;
-  background-color:gray;
+  background-color:white; 
 
   text-align: center;
   vertical-align: middle;
@@ -89,7 +86,7 @@ html, body {
   height:575px;
   text-align: center;
   vertical-align: middle;
-  color: black;
+  color: white;
   font-size:36px;
   font-family: 'Sniglet';
   /* the text things here (and also the nav arrows)
@@ -104,10 +101,12 @@ html, body {
   margin-top:-25px;*/
   color:black;
   font-family:'Sniglet';
+  color:white;
   margin-bottom: 30 px;
 }
 
 .background-image {
+  margin-top:-20px;
   position: fixed;
   left: 0;
   right: 0;

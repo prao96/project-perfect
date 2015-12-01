@@ -15,5 +15,8 @@ class TeacherController < ApplicationController
 	def project_created
 	end
 
+	def title_and_background
+	end
+
 
 end
