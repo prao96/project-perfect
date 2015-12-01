@@ -8,6 +8,7 @@ class StudentController < ApplicationController
 	end
 
 	def project_step
+		@step = Step.find(params[:id])
 	end
 
 	def background
