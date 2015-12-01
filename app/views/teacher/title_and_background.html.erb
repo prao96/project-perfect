@@ -23,38 +23,30 @@
 					<%= label_tag(:description, "Upload a picture for the project description:") %>
 				</div>
 
-				<!-- <div class="title text-center"> Add Supplies </div> -->
+				<div class = "form-group">
+					<%= label_tag(:description, "Upload a picture for the project description:") %>
 
-				<!-- add supplies -->
-
-			<label for="Supplies">Enter Supplies:</label>
-			<input type="text" class="form-control" id="Supplies" placeholder="Supply">
-
-			<div class="space"></div>
 
 			<label for="Supplies">Enter Supplies:</label>
 			<input type="text" class="form-control" id="Supplies" placeholder="Supply">
 
-			<div class="space"></div>
 
 			<label for="Supplies">Enter Supplies:</label>
 			<input type="text" class="form-control" id="Supplies" placeholder="Supply">
 
-			<div class="space"></div>
 
 			<label for="Supplies">Enter Supplies:</label>
 			<input type="text" class="form-control" id="Supplies" placeholder="Supply">
 
-			<div class="space"></div>
 
 			<label for="Supplies">Enter Supplies:</label>
 			<input type="text" class="form-control" id="Supplies" placeholder="Supply">
 
-			<div class="space"></div>
 
-			<!-- add steps -->
-			<label for="ProjectTitle">Enter Title:</label>
-			<input type="text" class="form-control" id="ProjectTitle" rows="1" placeholder="Enter First Step Title">
+			<label for="Supplies">Enter Supplies:</label>
+			<input type="text" class="form-control" id="Supplies" placeholder="Supply">
+
+			
 			<label for="Step">Enter First Step:</label>
 			<textarea class="form-control" id="Step" rows="4" placeholder="Enter First Step"></textarea>
 			<div class="form-group">
@@ -62,10 +54,8 @@
     			<input type="file" id="exampleInputFile">
     			<p class="help-block">Upload a picture to show on the first step of the project.</p>
   			</div>
-  			<div class="space"></div>
 
-  			<label for="ProjectTitle">Enter Title:</label>
-			<input type="text" class="form-control" id="ProjectTitle" rows="1" placeholder="Enter Second Step Title">
+  			
   			<label for="Step">Enter Second Step:</label>
 			<textarea class="form-control" id="Step" rows="4" placeholder="Enter Second Step:"></textarea>
 			<div class="form-group">
@@ -73,10 +63,8 @@
     			<input type="file" id="exampleInputFile">
     			<p class="help-block">Upload a picture to show on the second step of the project.</p>
   			</div>
-  			<div class="space"></div>
 
-  			<label for="ProjectTitle">Enter Title:</label>
-			<input type="text" class="form-control" id="ProjectTitle" rows="1" placeholder="Enter Third Step Title">
+  			
   			<label for="Step">Enter Third Step:</label>
 			<textarea class="form-control" id="Step" rows="4" placeholder="Enter Third Step:"></textarea>
 			<div class="form-group">
@@ -84,11 +72,11 @@
     			<input type="file" id="exampleInputFile">
     			<p class="help-block">Upload a picture to show on the third step of the project.</p>
   			</div>
-  			<div class="space"></div>
+
+  			<%= submit_tag("Create Project") %>
 
   			<div class="bottom-space"></div>
   			
-				<%= submit_tag("Create Project") %>
 			<% end %>
 		</div>
 	</div>
