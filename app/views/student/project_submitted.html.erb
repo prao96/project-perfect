@@ -1,0 +1,22 @@
+<% content_for :stylesheets do %>
+	<%= stylesheet_link_tag "project_submitted" %>
+<% end %>
+
+<div class="title text-center"> Your Project is Submitted! </div>
+
+	<div class="container-fluid bottom">
+
+		<div class="bottom-background"> </div>
+
+		<div class="center-block my-nav">
+
+
+			<%= link_to controller: "student", action: "home" do %>
+				<div class = "box home">
+					<img src="<%= asset_path( 'Home-50.png' ) %>" alt="HOME" style="width:60px;height:60px;">
+				</div>
+			<% end %>
+			
+		</div>
+	</div>
+

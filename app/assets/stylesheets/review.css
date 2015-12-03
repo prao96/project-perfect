@@ -1,7 +1,23 @@
 .space {
-	height:20px;
+	height:0px;
 }
 
 .bottom-space {
 	height:100px;
+}
+
+.form-group {
+	color:white;
+	font-family: Sniglet;
+	font-size: 20px;
+}
+
+.submit_tag {
+	
+}
+
+.submit-header {
+	color:white;
+	font-family: Sniglet;
+	font-size: 35px;
 }

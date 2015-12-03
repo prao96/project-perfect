@@ -6,6 +6,8 @@
 
 	<div class="container-fluid bottom">
 
+		<div class="bottom-background"> </div>
+
 		<div class="center-block my-nav">
 			<%= link_to controller: "student", id: @project.id, action: "nav" do %>
 				<div class = "box navi">
@@ -44,6 +46,12 @@
 		</div>
 
 		<div class="col-xs-12 col-md-pull-1 col-md-5 main center1"> 
+
+			<div class="submit-header">
+				<p>Review</p> 
+			</div>
+			<div class="space"></div>
+
 			<p><!-- You have created your own salt crystals. Admire their beauty. Observe their structure. Appreciate their sharp angles. --><%= @project.summary %></p>
 
 			</p>
@@ -52,7 +60,10 @@
 			
 		</div>
 
-		<div class="col-xs-6 col-md-pull-1 col-md-5 main center1"> <p>Submit</p> 
+		<div class="col-xs-6 col-md-pull-1 col-md-5 center2"> 
+			<div class="submit-header">
+				<p>Submit</p> 
+			</div>
 			<div class="space"></div>
 			<div class="form-group">
 					<%= label_tag(:description, "Describe your project process :") %>
@@ -60,8 +71,17 @@
 			</div>
 			<div class="space"></div>
 
-			<%= submit_tag("Submit Answer") %>
+			<div class="form-group">
+					<%= label_tag("Upload a picture for the description :") %>
+	    			<input type="file" id="description_pic">
+  			</div>
 
+  			<div class="space"></div>
+  			<a href="/student/project_submitted">
+  				<div=class"submit">
+				<%= submit_tag("Submit Answer") %>
+				</div>
+			</a>
 			<div class = "bottom-space"></div>
 
 

@@ -14,3 +14,16 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+/*
+var navibar = getElementById('navbar');
+navibar.style.opacity = 1;
+navibar.style.transition = "opacity 1s";
+
+function zoomOut() {
+	navibar.style.opacity=0;
+}
+
+window.addEventListener("beforeunload", zoomOut);
+
+*/
