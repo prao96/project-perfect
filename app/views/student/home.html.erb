@@ -2,18 +2,16 @@
 	<%= stylesheet_link_tag "student_home" %>
 <% end %>
 
-<div class="title text-center"> Welcome, Sam! </div>
+<div class="conatiner-fluid top">
+	<div class="bottom-background"></div>
+	<div class="title text-center"> Welcome, Student! </div>
+</div>
 
 	<div class="container-fluid bottom">
 
 		<div class="bottom-background"> </div>
 
-		<div class="center-block my-nav">
-			<a href="/student/navigation">
-				<div class = "box navi">
-					<img src="<%= asset_path( 'noun_45581_cc.png' ) %>" alt="NAV" style="width:60px;height:60px;">
-				</div>
-			</a>
+		<div class="center-block teacher-nav">
 			<a href="/student/not_implemented">
 				<div class = "box qanda">
 					<img src="<%= asset_path( 'noun_54982_cc.png' ) %>" alt="Q/A" style="width:60px;height:60px;">
@@ -43,30 +41,23 @@
 
 		<div class="col-xs-12 col-md-push-1 col-md-5 main center1"> 
 				<div class="current-projects col-md-12"> Current Projects
-					<div class="project-box">
-						<div class="project-title">
 							<% @projects.each do |project| %>
 
 								<%= link_to controller: "student", id: project.id, action: "landing" do %>
-									<div class="project-title"><%= project.title %></div>
+									<div class="navigation"><%= project.title %></div>
 								<% end %>
 
 							<% end %>
-						</div>
-					</div>
+						
 				</div>
 		</div>
 		<div class="col-xs-12 col-md-push-1 col-md-5 main center1"> 
 			<div class="past-projects col-md-12"> Past Projects
-			</div>
-				<div class="project-box">
-						<div class="project-title">
-							<div class="project-title">Build a Castle
-						</div>
-					</div>
-				</div>						
 
-			</div>
+					<div class="navigation">Build a Castle
+					</div>
+			</div>						
+
 		</div>
 	</div>
 </div>
