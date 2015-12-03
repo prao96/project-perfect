@@ -1,0 +1,89 @@
+/* line 5, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+body {
+  margin: 0px 0px 0px 0px;
+}
+
+/* line 9, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.logo {
+  width: 100%;
+}
+
+/* line 13, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -100;
+  display: block;
+  background-image: url("http://aspireblog.org/wp-content/uploads/2013/04/chalkboard.jpg");
+  width: 100%;
+  height: 100%;
+  /*
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    */
+}
+
+/* line 32, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.container {
+  height: 500px;
+}
+
+/* line 36, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.logo {
+  position: fixed;
+  left-margin: -100px;
+}
+
+/* line 41, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 400px auto;
+  font-family: Sniglet;
+  color: white;
+}
+
+/* line 48, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+
+/* line 52, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.form-signin .checkbox {
+  font-weight: normal;
+}
+
+/* line 55, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* line 64, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+/* line 67, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* line 72, /Users/kdustakar/Developer/project-perfect/app/assets/stylesheets/login.scss */
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
