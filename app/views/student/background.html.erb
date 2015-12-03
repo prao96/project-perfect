@@ -2,16 +2,46 @@
 	<%= stylesheet_link_tag "background" %>
 <% end %>
 
-<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+<div class="container-fluid bottom">
 
+		<div class="center-block my-nav">
+			<a href="/student/navigation">
+				<div class = "box navi">
+					<img src="<%= asset_path( 'noun_45581_cc.png' ) %>" alt="NAV" style="width:60px;height:60px;">
+				</div>
+			</a>
+			<a href="/student/not_implemented">
+				<div class = "box qanda">
+					<img src="<%= asset_path( 'noun_54982_cc.png' ) %>" alt="Q/A" style="width:60px;height:60px;">
+				</div>
+			</a>
+			<a href="/student/home">
+				<div class = "box home">
+					<img src="<%= asset_path( 'Home-50.png' ) %>" alt="HOME" style="width:60px;height:60px;">
+				</div>
+			</a>
+			<a href="/student/not_implemented">
+				<div class = "box settings">
+					<img src="<%= asset_path( 'Settings-50.png' ) %>" alt="SETTINGS" style="width:60px;height:60px;">
+				</div>
+			</a>
+			<a href="/student/not_implemented">
+				<div class = "box alerts">
+					<img src="<%= asset_path( 'noun_101400_cc.png' ) %>" alt="ALERTS" style="width:60px;height:60px;">
+				</div>
+			</a>
+		</div>
+</div>
+
+<link href='https://fonts.googleapis.com/css?family=Sniglet' rel='stylesheet' type='text/css'>
 <div class="container-fluid directional" >
 	<div class="row">
-		<a href="/student/home">
+		<%= link_to controller: "student", id: @project.id, action: "landing" do %>
 			<div class="col-xs-6 col-md-1 main left"><</div>
-		</a>
-		<a href="/student/background">
+		<% end %>
+		<%= link_to controller: "student", project_id: @project.id, action: "supplies" do %>
 			<div class="col-xs-6 pull-right col-md-1 main right">></div>
-		</a>
+		<% end %>
 	</div>
 </div>
 
@@ -19,9 +49,8 @@
 
 <div class="container-fluid content" >
 	<div class="row">
-
 		<div class="col-xs-12 col-md-push-1 col-md-5 main center1"> 
-			<p>Common salt is a mineral composed primarily of sodium chloride (NaCl), a chemical compound belonging to the larger class of salts; salt in its natural form as a crystalline mineral is known as rock salt or halite. Salt is present in vast quantities in seawater. I'm going to continue adding text because I want to test how scrolling would look on our webpage. I think breaking bad is a really good show because it keeps me entertained and walter white is a boss. I am just adding text at this point don't mind me bl abla bla bal bal bal thanks that's all. </p>
+			<p><!-- Common salt is a mineral composed primarily of sodium chloride (NaCl), a chemical compound belonging to the larger class of salts; salt in its natural form as a crystalline mineral is known as rock salt or halite. Salt is present in vast quantities in seawater. --><%=@project.background %></p>
 		</div>
 		<div class="col-xs-12 col-md-push-1 col-md-5 main center1"> 
 			<img src="https://lhmrussia.files.wordpress.com/2015/04/nacl.jpg" alt="NaCl" style="width:400px;height:228px;">	

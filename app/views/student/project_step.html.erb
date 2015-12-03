@@ -2,25 +2,71 @@
 	<%= stylesheet_link_tag "student_step_page" %>
 <% end %>
 
-<div class="title text-center"> Step 1 </div>
+<div class="title text-center"> Step <%= @step.first.step_number %> </div>
+
+	<div class="container-fluid bottom">
+
+		<div class="center-block my-nav">
+			<a href="/student/navigation">
+				<div class = "box navi">
+					<img src="<%= asset_path( 'noun_45581_cc.png' ) %>" alt="NAV" style="width:60px;height:60px;">
+				</div>
+			</a>
+			<a href="/student/not_implemented">
+				<div class = "box qanda">
+					<img src="<%= asset_path( 'noun_54982_cc.png' ) %>" alt="Q/A" style="width:60px;height:60px;">
+				</div>
+			</a>
+			<a href="/student/home">
+				<div class = "box home">
+					<img src="<%= asset_path( 'Home-50.png' ) %>" alt="HOME" style="width:60px;height:60px;">
+				</div>
+			</a>
+			<a href="/student/not_implemented">
+				<div class = "box settings">
+					<img src="<%= asset_path( 'Settings-50.png' ) %>" alt="SETTINGS" style="width:60px;height:60px;">
+				</div>
+			</a>
+			<a href="/student/not_implemented">
+				<div class = "box alerts">
+					<img src="<%= asset_path( 'noun_101400_cc.png' ) %>" alt="ALERTS" style="width:60px;height:60px;">
+				</div>
+			</a>
+		</div>
+	</div>
 
 <div class="container-fluid" >
 	<div class="row">
-		<a href="/student/supplies">
+
+		<% puts @number_of_steps.first.number_of_steps %>
+
+		<% if @step.first.step_number == 1 %>
+			<%= link_to controller: "student", project_id: @step.first.project_id, action: "supplies" do %>
+				<div class="col-xs-6 col-md-1 main left"><</div>
+			<% end %>
+		<% else %>
+			<%= link_to controller: "student", project_id: @step.first.project_id, action: "project_step", step_number: @step.first.step_number - 1 do %>
+				<div class="col-xs-6 col-md-1 main left"><</div>
+			<% end %>
+		<% end %>
+		<!-- <a href="/student/supplies">
 			<div class="col-xs-6 col-md-1 main left"><</div>
-		</a>
-		<a href="/student/review">
-			<div class="col-xs-6 col-md-push-10 col-md-1 main right">></div>
-		<a>
+		</a> -->
+
+		<% if @step.first.step_number == @number_of_steps.first.number_of_steps %>
+			<%= link_to controller: "student", id: @step.first.project_id, action: "review" do %>
+				<div class="col-xs-6 col-md-push-10 col-md-1 main right">></div>
+			<% end %>
+		<% else %>
+			<%= link_to controller: "student", project_id: @step.first.project_id, action: "project_step", step_number: @step.first.step_number + 1 do %>
+				<div class="col-xs-6 col-md-push-10 col-md-1 main right">></div>
+			<% end %>
+		<% end %>
 
 		<div class="col-xs-12 col-md-pull-1 col-md-5 main center1"> 
-			In this step we will dissolve salt in water.
 
-			Add 1000mL of water in to your large container.
+			<%= @step.first.step %>
 
-			Add 10g of salt into the container.
-
-			Use spoon to mix salt in.
 		</div>
 		<div class="col-xs-12 col-md-pull-1 col-md-5 main center1"> 
 			<img src="<%= asset_path( 'salt_step.png' ) %>" alt="NaCl" style="width:333px;height:226px;">	

@@ -46,9 +46,10 @@ html, body {
   margin:auto;
   /*top: 25%;
   margin-top:-25px;*/
-  margin-top:15px;
-  color:yellow;
-  font-family: 'Ubuntu', sans-serif;
+  margin-top:20px;
+  color:#FFD930;
+  font-family: 'Sniglet';
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
@@ -109,7 +110,7 @@ html, body {
   vertical-align: middle;
   color: white;
   font-size:25px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Sniglet';
   /* the text things here (and also the nav arrows)
   should have their own class! just added this here so you 
   guys could see what I meant for the layout //Filippa */
@@ -121,7 +122,7 @@ html, body {
   /*top: 25%;
   margin-top:-25px;*/
   color:white;
-  font-family:'Ubuntu';
+  font-family:'Sniglet';
   margin-bottom: 30 px;
 }
 

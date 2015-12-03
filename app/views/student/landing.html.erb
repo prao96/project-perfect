@@ -4,32 +4,68 @@
 
 	<div class="title text-center"> <!-- Making Salt Crystals --> <%=@project.title %> </div>
 
+	<div class="container-fluid bottom">
+
+		<div class="center-block my-nav">
+			<a href="/student/navigation">
+				<div class = "box navi">
+					<img src="<%= asset_path( 'noun_45581_cc.png' ) %>" alt="NAV" style="width:60px;height:60px;">
+				</div>
+			</a>
+			<a href="/student/not_implemented">
+				<div class = "box qanda">
+					<img src="<%= asset_path( 'noun_54982_cc.png' ) %>" alt="Q/A" style="width:60px;height:60px;">
+				</div>
+			</a>
+			<a href="/student/home">
+				<div class = "box home">
+					<img src="<%= asset_path( 'Home-50.png' ) %>" alt="HOME" style="width:60px;height:60px;">
+				</div>
+			</a>
+			<a href="/student/not_implemented">
+				<div class = "box settings">
+					<img src="<%= asset_path( 'Settings-50.png' ) %>" alt="SETTINGS" style="width:60px;height:60px;">
+				</div>
+			</a>
+			<a href="/student/not_implemented">
+				<div class = "box alerts">
+					<img src="<%= asset_path( 'noun_101400_cc.png' ) %>" alt="ALERTS" style="width:60px;height:60px;">
+				</div>
+			</a>
+	</div>
+
+	<!--	<div class="title text-center"> Project Perfect </div> -->
+
+	</div>
+
 <div class="container-fluid" >
 	<div class="row">
-		<a href="/student/home">
+		<%= link_to controller: "student", action: "home" do %>
 			<div class="col-xs-6 col-md-1 main left"><</div>
-		</a>
-		<a href="/student/background">
+		<% end %>
+		<%= link_to controller: "student", id: @project.id, action: "background" do %>
 			<div class="col-xs-6 col-md-push-10 col-md-1 main right">></div>
-		</a>
+		<% end %>
 
 		<div class="col-xs-12 col-md-pull-1 col-md-5 main center1">
 			<img src="http://www.bigfoto.com/miscellaneous/photos-16/salt-crystals-94jf.jpg" alt="Mountain View" style="width:304px;height:228px;">	
 			<p><!-- Have you ever wanted to learn how to make salt crystals on your own? Well here's your chance! --><%=@project.description %></p>
 		 </div>
 		<div class="col-xs-12 col-md-pull-1 col-md-5 main center1"> 
-			<a href="/student/background">
+			<%= link_to controller: "student", id: @project.id, action: "background" do %>
 				<div class="navigation">Background</div>
-			</a>
-			<a href="/student/supplies">
+			<% end %>
+			<%= link_to controller: "student", project_id: @project.id, action: "supplies" do %>
 				<div class="navigation">Supplies</div>
-			</a>
-			<a href="/student/project_step">	
-				<div class="navigation">Step 1</div>
-			</a>
-			<a href="/student/review">
+			<% end %>
+			<% @project.number_of_steps.times do |val| %>
+				<%= link_to controller: "student", project_id: @project.id, action: "project_step", step_number: val+1 do %>
+					<div class="navigation">Step <%= val+1 %></div>
+				<% end %>
+			<%  end %>
+			<%= link_to controller: "student", id: @project.id, action: "review" do %>
 				<div class="navigation">Review/Submit</div>
-			</a>
+			<% end %>
 		</div>
 	</div>
 </div>
