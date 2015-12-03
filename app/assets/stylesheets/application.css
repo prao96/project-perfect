@@ -18,6 +18,10 @@ body {
   background-color:black;
 }
 
+.top-margin {
+  height:125px;
+}
+
 .directional {
   position:fixed;
   width:100%;

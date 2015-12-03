@@ -53,7 +53,6 @@
 			<div class="submit-header">
 				<p>Review</p> 
 			</div>
-			<div class="space"></div>
 
 			<p><!-- You have created your own salt crystals. Admire their beauty. Observe their structure. Appreciate their sharp angles. --><%= @project.summary %></p>
 			</p>
@@ -61,23 +60,22 @@
 			</p>
 		</div>
 
+		<div class="top-margin"> </div>
+
 		<div class="col-xs-6 col-md-pull-1 col-md-5 center2"> 
 			<div class="submit-header">
-				<p>Submit</p> 
+				<p class="text-center">Submit</p> 
 			</div>
-			<div class="space"></div>
 			<div class="form-group">
 					<%= label_tag(:description, "Describe your project process :") %>
 				  	<%= text_area :description, nil, class:"form-control", id:"ProjectDescription", rows: "4", placeholder: "Describe your project process" %>
 			</div>
-			<div class="space"></div>
 
 			<div class="form-group">
 					<%= label_tag("Upload a picture for the description :") %>
 	    			<input type="file" id="description_pic">
   			</div>
 
-  			<div class="space"></div>
   			<a href="/student/project_submitted">
   				<div=class"submit">
 				<%= submit_tag("Submit Answer") %>
