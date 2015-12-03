@@ -42,7 +42,7 @@
 		<%= link_to controller: "student", id: @data.first.project_id, action: "background" do %>
 			<div class="col-xs-6 col-md-1 main left"><</div>
 		<% end %>
-		<%= link_to controller: "student", project_id: @data.first.id, action: "project_step", step_number: 1 do %>
+		<%= link_to controller: "student", project_id: @data.first.project_id, action: "project_step", step_number: 1 do %>
 			<div class="col-xs-6 col-md-push-10 col-md-1 main right">></div>
 		<% end %>
 
