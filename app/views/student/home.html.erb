@@ -41,6 +41,8 @@
 
 		<div class="col-xs-12 col-md-push-1 col-md-5 main center1"> 
 				<div class="current-projects col-md-12"> Current Projects
+					<div class="space">
+					</div>
 							<% @projects.each do |project| %>
 
 								<%= link_to controller: "student", id: project.id, action: "landing" do %>
@@ -53,6 +55,8 @@
 		</div>
 		<div class="col-xs-12 col-md-push-1 col-md-5 main center1"> 
 			<div class="past-projects col-md-12"> Past Projects
+				<div class="space">
+					</div>
 
 					<div class="navigation">Build a Castle
 					</div>
