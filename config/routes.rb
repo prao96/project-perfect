@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'student/home' => 'student#home'
   get 'student/project/:id/nav' => 'student#nav'
   get 'student/not_implemented' => 'student#not_implemented'
+  get 'student/project_submitted' => 'student#project_submitted'
   get 'teacher/landing' => 'teacher#landing'
   get 'teacher/create_new_project' => 'teacher#create_new_project'
   get 'teacher/brand_new_textedit' => 'teacher#brand_new_textedit'

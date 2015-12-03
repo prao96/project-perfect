@@ -33,4 +33,7 @@ class StudentController < ApplicationController
 		@project = Project.find(params[:id])
 	end
 
+	def project_submitted
+	end
+
 end

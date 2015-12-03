@@ -46,13 +46,22 @@
 		</div>
 
 		<div class="col-xs-12 col-md-pull-1 col-md-5 main center1"> 
+
+			<div class="submit-header">
+				<p>Review</p> 
+			</div>
+			<div class="space"></div>
+
 			<p><!-- You have created your own salt crystals. Admire their beauty. Observe their structure. Appreciate their sharp angles. --><%= @project.summary %></p>
 			</p>
 				<img src="http://www.marthastewart.com/sites/files/marthastewart.com/styles/wmax-1500/public/d35/how_to_make_monster_salt_crystals_1/how_to_make_monster_salt_crystals_1_horiz.jpg?itok=iY0zkG2J" style="width:400px; margin-top:30px"/>
 			</p>
 		</div>
 
-		<div class="col-xs-6 col-md-pull-1 col-md-5 center2"> <p>Submit</p> 
+		<div class="col-xs-6 col-md-pull-1 col-md-5 center2"> 
+			<div class="submit-header">
+				<p>Submit</p> 
+			</div>
 			<div class="space"></div>
 			<div class="form-group">
 					<%= label_tag(:description, "Describe your project process :") %>
@@ -60,8 +69,17 @@
 			</div>
 			<div class="space"></div>
 
-			<%= submit_tag("Submit Answer") %>
-			
+			<div class="form-group">
+					<%= label_tag("Upload a picture for the description :") %>
+	    			<input type="file" id="description_pic">
+  			</div>
+
+  			<div class="space"></div>
+  			<a href="/student/project_submitted">
+  				<div=class"submit">
+				<%= submit_tag("Submit Answer") %>
+				</div>
+			</a>
 			<div class = "bottom-space"></div>
 
 

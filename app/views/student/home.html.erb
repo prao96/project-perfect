@@ -43,17 +43,26 @@
 
 		<div class="col-xs-12 col-md-push-1 col-md-5 main center1"> 
 				<div class="current-projects col-md-12"> 
-					<% @projects.each do |project| %>
+					<div class="project-box">
+						<div class="project-title">
+							<% @projects.each do |project| %>
 
-						<%= link_to controller: "student", id: project.id, action: "landing" do %>
-							<div class="navigation"><%= project.title %></div>
-						<% end %>
+								<%= link_to controller: "student", id: project.id, action: "landing" do %>
+									<div class="navigation"><%= project.title %></div>
+								<% end %>
 
-					<% end %>
+							<% end %>
+						</div>
+					</div>
 				</div>
 		</div>
 		<div class="col-xs-12 col-md-push-1 col-md-5 main center1"> 
-			<div class="past-projects col-md-12"> Past Projects
+				<div class="project-box">
+						<div class="project-title">
+							<div class="past-projects col-md-12"> Past Projects
+						</div>
+				</div>						
+
 			</div>
 		</div>
 	</div>
