@@ -7,21 +7,21 @@
 	<div class="container-fluid bottom">
 
 		<div class="center-block my-nav">
-			<a href="/student/navigation">
+			<%= link_to controller: "student", id: @project.id, action: "nav" do %>
 				<div class = "box navi">
 					<img src="<%= asset_path( 'noun_45581_cc.png' ) %>" alt="NAV" style="width:60px;height:60px;">
 				</div>
-			</a>
+			<% end %>
 			<a href="/student/not_implemented">
 				<div class = "box qanda">
 					<img src="<%= asset_path( 'noun_54982_cc.png' ) %>" alt="Q/A" style="width:60px;height:60px;">
 				</div>
 			</a>
-			<a href="/student/home">
+			<%= link_to controller: "student", action: "home" do %>
 				<div class = "box home">
 					<img src="<%= asset_path( 'Home-50.png' ) %>" alt="HOME" style="width:60px;height:60px;">
 				</div>
-			</a>
+			<% end %>
 			<a href="/student/not_implemented">
 				<div class = "box settings">
 					<img src="<%= asset_path( 'Settings-50.png' ) %>" alt="SETTINGS" style="width:60px;height:60px;">
@@ -45,12 +45,28 @@
 
 		<div class="col-xs-12 col-md-pull-1 col-md-5 main center1"> 
 			<p><!-- You have created your own salt crystals. Admire their beauty. Observe their structure. Appreciate their sharp angles. --><%= @project.summary %></p>
-		</p>
-			<img src="http://www.marthastewart.com/sites/files/marthastewart.com/styles/wmax-1500/public/d35/how_to_make_monster_salt_crystals_1/how_to_make_monster_salt_crystals_1_horiz.jpg?itok=iY0zkG2J" style="width:400px; margin-top:30px"/>
-		</p>
-		</div>
-		<div class="col-xs-12 col-md-pull-1 col-md-5 main center1"> Submit 
 
-			<p> <em>coming soon!</em> </p> </div>
+			</p>
+				<img src="http://www.marthastewart.com/sites/files/marthastewart.com/styles/wmax-1500/public/d35/how_to_make_monster_salt_crystals_1/how_to_make_monster_salt_crystals_1_horiz.jpg?itok=iY0zkG2J" style="width:400px; margin-top:30px"/>
+			</p>
+			
+		</div>
+
+		<div class="col-xs-6 col-md-pull-1 col-md-5 main center1"> <p>Submit</p> 
+			<div class="space"></div>
+			<div class="form-group">
+					<%= label_tag(:description, "Describe your project process :") %>
+				  	<%= text_area :description, nil, class:"form-control", id:"ProjectDescription", rows: "4", placeholder: "Describe your project process" %>
+			</div>
+			<div class="space"></div>
+
+			<%= submit_tag("Submit Answer") %>
+
+			<div class = "bottom-space"></div>
+
+
+			<!-- <p><img src="<%= asset_path( 'upload_picture.png' ) %>" alt="UPLOAD" style="width:60px;height:60px;"></p> -->
+		</div>
+		
 	</div>
 </div>

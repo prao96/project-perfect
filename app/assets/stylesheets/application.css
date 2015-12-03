@@ -18,10 +18,6 @@ body {
   background-color:black;
 }
 
-html, body {
- height: 100%;
-}
-
 .directional {
   position:fixed;
   width:100%;
@@ -56,15 +52,37 @@ html, body {
 }
 
 .my-nav {
+  z-index:1000;
   width: 840px;
   margin-top:15px;
 }
 
 .bottom {
-  z-index:1000;
+  z-index:998;
   position: fixed;
-  bottom: 15px;
   width: 100%;
+  bottom: -3px;
+  height: 120px;
+  width: 100%;
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+
+}
+
+.bottom-background {
+  background-image: url("http://trillionforest.com/img/chalkboard-loop1.jpg");
+  z-index:-1;
+  position:absolute;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  margin: 5px;
 }
 
 .box {
@@ -89,7 +107,7 @@ html, body {
   text-align: center;
   vertical-align: middle;
   color: white;
-  font-size:36px;
+  font-size:25px;
   font-family: 'Sniglet';
   /* the text things here (and also the nav arrows)
   should have their own class! just added this here so you 
@@ -116,7 +134,7 @@ html, body {
   z-index: -100;
 
   display: block;
-  background-image: url("http://aspireblog.org/wp-content/uploads/2013/04/chalkboard.jpg");
+  background-image: url("http://trillionforest.com/img/chalkboard-loop1.jpg");
   width: 100%;
   height: 100%;
 }
