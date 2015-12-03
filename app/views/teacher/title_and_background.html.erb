@@ -2,7 +2,10 @@
 	<%= stylesheet_link_tag "brand_new_textedit" %>
 <% end %>
 
-<div class="title text-center"> New Project </div>
+<div class="conatiner-fluid top">
+	<div class="bottom-background"></div>
+	<div class="title text-center"> New Project </div>
+</div>
 
 <div class="container-fluid bottom">
 
@@ -33,8 +36,9 @@
 		</div>
 </div>
 
+<div class="top-margin"></div>
 
-<div class="container-fluid ">
+<div class="container-fluid">
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<%= form_tag(controller: "teacher", action: "create_project", method: "post") do %>

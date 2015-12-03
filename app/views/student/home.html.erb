@@ -2,18 +2,16 @@
 	<%= stylesheet_link_tag "student_home" %>
 <% end %>
 
-<div class="title text-center"> Welcome, Sam! </div>
+<div class="conatiner-fluid top">
+	<div class="bottom-background"></div>
+	<div class="title text-center"> Welcome, Student! </div>
+</div>
 
 	<div class="container-fluid bottom">
 
 		<div class="bottom-background"> </div>
 
-		<div class="center-block my-nav">
-			<a href="/student/navigation">
-				<div class = "box navi">
-					<img src="<%= asset_path( 'noun_45581_cc.png' ) %>" alt="NAV" style="width:60px;height:60px;">
-				</div>
-			</a>
+		<div class="center-block teacher-nav">
 			<a href="/student/not_implemented">
 				<div class = "box qanda">
 					<img src="<%= asset_path( 'noun_54982_cc.png' ) %>" alt="Q/A" style="width:60px;height:60px;">
