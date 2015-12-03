@@ -9,21 +9,21 @@
 	<div class="container-fluid bottom">
 
 		<div class="center-block my-nav">
-			<a href="/student/navigation">
+			<%= link_to controller: "student", id: @project.id, action: "nav" do %>
 				<div class = "box navi">
 					<img src="<%= asset_path( 'noun_45581_cc.png' ) %>" alt="NAV" style="width:60px;height:60px;">
 				</div>
-			</a>
+			<% end %>
 			<a href="/student/not_implemented">
 				<div class = "box qanda">
 					<img src="<%= asset_path( 'noun_54982_cc.png' ) %>" alt="Q/A" style="width:60px;height:60px;">
 				</div>
 			</a>
-			<a href="/student/home">
+			<%= link_to controller: "student", action: "home" do %>
 				<div class = "box home">
 					<img src="<%= asset_path( 'Home-50.png' ) %>" alt="HOME" style="width:60px;height:60px;">
 				</div>
-			</a>
+			<% end %>
 			<a href="/student/not_implemented">
 				<div class = "box settings">
 					<img src="<%= asset_path( 'Settings-50.png' ) %>" alt="SETTINGS" style="width:60px;height:60px;">
@@ -37,8 +37,23 @@
 		</div>
 	</div>
 
-<a href="/student/landing"><div class="navigation text-center">Landing Page</div></a>
+<%= link_to controller: "student", id: @project.id, action: "background" do %>
+	<div class="navigation text-center">Background</div>
+<% end %>
+<%= link_to controller: "student", project_id: @project.id, action: "supplies" do %>
+	<div class="navigation text-center">Supplies</div>
+<% end %>
+<% @project.number_of_steps.times do |val| %>
+	<%= link_to controller: "student", project_id: @project.id, action: "project_step", step_number: val+1 do %>
+		<div class="navigation text-center">Step <%= val+1 %></div>
+	<% end %>
+<%  end %>
+<%= link_to controller: "student", id: @project.id, action: "review" do %>
+	<div class="navigation text-center">Review/Submit</div>
+<% end %>
+
+<!-- <a href="/student/landing"><div class="navigation text-center">Landing Page</div></a>
 <a href="/student/background"><div class="navigation text-center">Background</div></a>
 <a href="/student/supplies"><div class="navigation text-center">Supplies</div></a>
 <a href="/student/project_step"><div class="navigation text-center">Step 1</div></a>
-<a href="/student/review"><div class="navigation text-center">Summary</div></a>
+<a href="/student/review"><div class="navigation text-center">Summary</div></a> -->
