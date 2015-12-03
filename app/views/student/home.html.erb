@@ -1,12 +1,14 @@
 <% content_for :stylesheets do %>
 	<%= stylesheet_link_tag "student_home" %>
+	<%= stylesheet_link_tag "animate" %>
+	<%= javascript_include_tag 'application' %>
 <% end %>
 
 <div class="title text-center"> Welcome, Sam! </div>
 
 	<div class="container-fluid bottom">
 
-		<div class="center-block my-nav">
+		<div class="center-block my-nav" id="navbar">
 			<a href="/student/navigation">
 				<div class = "box navi">
 					<img src="<%= asset_path( 'noun_45581_cc.png' ) %>" alt="NAV" style="width:60px;height:60px;">
