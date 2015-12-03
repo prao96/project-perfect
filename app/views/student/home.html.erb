@@ -1,7 +1,5 @@
 <% content_for :stylesheets do %>
 	<%= stylesheet_link_tag "student_home" %>
-	<%= stylesheet_link_tag "animate" %>
-	<%= javascript_include_tag 'application' %>
 <% end %>
 
 <div class="title text-center"> Welcome, Sam! </div>
@@ -44,13 +42,13 @@
 
 
 		<div class="col-xs-12 col-md-push-1 col-md-5 main center1"> 
-				<div class="current-projects col-md-12"> 
+				<div class="current-projects col-md-12"> Current Projects
 					<div class="project-box">
 						<div class="project-title">
 							<% @projects.each do |project| %>
 
 								<%= link_to controller: "student", id: project.id, action: "landing" do %>
-									<div class="navigation"><%= project.title %></div>
+									<div class="project-title"><%= project.title %></div>
 								<% end %>
 
 							<% end %>
@@ -59,10 +57,13 @@
 				</div>
 		</div>
 		<div class="col-xs-12 col-md-push-1 col-md-5 main center1"> 
+			<div class="past-projects col-md-12"> Past Projects
+			</div>
 				<div class="project-box">
 						<div class="project-title">
-							<div class="past-projects col-md-12"> Past Projects
+							<div class="project-title">Build a Castle
 						</div>
+					</div>
 				</div>						
 
 			</div>
