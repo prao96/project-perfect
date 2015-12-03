@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get 'student/project/:id/background' => 'student#background'
   get 'student/project/:project_id/supplies' => 'student#supplies'
   get 'student/home' => 'student#home'
-  get 'student/navigation' => 'student#nav'
+  get 'student/project/:id/nav' => 'student#nav'
   get 'student/not_implemented' => 'student#not_implemented'
   get 'teacher/landing' => 'teacher#landing'
   get 'teacher/create_new_project' => 'teacher#create_new_project'

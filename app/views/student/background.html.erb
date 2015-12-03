@@ -7,33 +7,33 @@
 
 	<div class="bottom-background"> </div>
 
-	<div class="center-block my-nav animated zoomInUp">
-		<a href="/student/navigation">
-			<div class = "box navi">
-				<img src="<%= asset_path( 'noun_45581_cc.png' ) %>" alt="NAV" style="width:60px;height:60px;">
-			</div>
-		</a>
-		<a href="/student/not_implemented">
-			<div class = "box qanda">
-				<img src="<%= asset_path( 'noun_54982_cc.png' ) %>" alt="Q/A" style="width:60px;height:60px;">
-			</div>
-		</a>
-		<a href="/student/home">
-			<div class = "box home">
-				<img src="<%= asset_path( 'Home-50.png' ) %>" alt="HOME" style="width:60px;height:60px;">
-			</div>
-		</a>
-		<a href="/student/not_implemented">
-			<div class = "box settings">
-				<img src="<%= asset_path( 'Settings-50.png' ) %>" alt="SETTINGS" style="width:60px;height:60px;">
-			</div>
-		</a>
-		<a href="/student/not_implemented">
-			<div class = "box alerts">
-				<img src="<%= asset_path( 'noun_101400_cc.png' ) %>" alt="ALERTS" style="width:60px;height:60px;">
-			</div>
-		</a>
-	</div>
+		<div class="center-block my-nav">
+			<%= link_to controller: "student", id: @project.id, action: "nav" do %>
+				<div class = "box navi">
+					<img src="<%= asset_path( 'noun_45581_cc.png' ) %>" alt="NAV" style="width:60px;height:60px;">
+				</div>
+			<% end %>
+			<a href="/student/not_implemented">
+				<div class = "box qanda">
+					<img src="<%= asset_path( 'noun_54982_cc.png' ) %>" alt="Q/A" style="width:60px;height:60px;">
+				</div>
+			</a>
+			<%= link_to controller: "student", action: "home" do %>
+				<div class = "box home">
+					<img src="<%= asset_path( 'Home-50.png' ) %>" alt="HOME" style="width:60px;height:60px;">
+				</div>
+			<% end %>
+			<a href="/student/not_implemented">
+				<div class = "box settings">
+					<img src="<%= asset_path( 'Settings-50.png' ) %>" alt="SETTINGS" style="width:60px;height:60px;">
+				</div>
+			</a>
+			<a href="/student/not_implemented">
+				<div class = "box alerts">
+					<img src="<%= asset_path( 'noun_101400_cc.png' ) %>" alt="ALERTS" style="width:60px;height:60px;">
+				</div>
+			</a>
+		</div>
 </div>
 
 <link href='https://fonts.googleapis.com/css?family=Sniglet' rel='stylesheet' type='text/css'>

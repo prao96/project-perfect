@@ -26,10 +26,11 @@ class StudentController < ApplicationController
 	end
 
 	def review
-		@project = Project.first
+		@project = Project.find(params[:id])
 	end
 
 	def nav
+		@project = Project.find(params[:id])
 	end
 
 end
