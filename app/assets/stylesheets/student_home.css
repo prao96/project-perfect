@@ -25,10 +25,6 @@
   line-height: 75px; 
 }
 
-.project-box:hover {
-  background-color:gray;
-}
-
-.project-title {
-	color:black;
+.space {
+  height:10px;
 }
