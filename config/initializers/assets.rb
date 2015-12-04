@@ -27,6 +27,7 @@ Rails.application.config.assets.precompile += %w( add_supplies.css )
 Rails.application.config.assets.precompile += %w( add_steps.css )
 Rails.application.config.assets.precompile += %w( review.css )
 Rails.application.config.assets.precompile += %w( index.css )
+Rails.application.config.assets.precompile += %w( teacher_student.css )
 
 Rails.application.config.assets.precompile += %w( project_submitted.css )
 
