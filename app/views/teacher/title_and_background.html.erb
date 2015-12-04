@@ -112,6 +112,11 @@
 	    			<input type="file" id="step3_pic">
   				</div>
 
+  				<div class="form-group">
+					<%= label_tag(:summary, "Enter summary of project for students to review once finished :") %>
+				  	<%= text_area :summary, nil, class:"form-control", id:"Summary", rows: "4", placeholder: "Summary" %>
+				</div>
+
 	  			<%= submit_tag("Create Project") %>
 
 	  			<div class = "bottom-space"></div>
