@@ -60,7 +60,11 @@ body {
   width: 840px;
   margin-top:15px;
 }
-
+.submit-nav {
+  z-index:1000;
+  width: 325px;
+  margin-top:15px;
+}
 .teacher-nav {
   z-index:1000;
   width: 655px;
