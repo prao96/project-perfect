@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'student#home'
+  root 'login#teacher_student'
 
   get 'login' => 'login#index'
 
@@ -27,7 +27,7 @@ Rails.application.routes.draw do
   get 'student/project/:id/student_settings_project' => 'student#student_settings_project'
   get 'student/student_settings_other' => 'student#student_settings_other'
   post 'teacher/create_project' => 'teacher#create_project'
-  get 'teacher/teacher_student' => 'teacher#teacher_student'
+  get 'login/teacher_student' => 'login#teacher_student'
 
 
   
