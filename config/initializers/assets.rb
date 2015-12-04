@@ -30,5 +30,6 @@ Rails.application.config.assets.precompile += %w( review.css )
 Rails.application.config.assets.precompile += %w( project_submitted.css )
 
 Rails.application.config.assets.precompile += %w( animate.css )
+Rails.application.config.assets.precompile += %w( settings.css )
 
 
