@@ -46,6 +46,8 @@ body {
   margin:auto;
   /*top: 25%;
   margin-top:-25px;*/
+  color:black;
+  font-family: 'Sniglet';
   margin-top:20px;
   color:#FFD930;
   font-family: 'Sniglet';
@@ -133,6 +135,8 @@ body {
   margin:auto;
   /*top: 25%;
   margin-top:-25px;*/
+  color:black;
+  font-family:'Sniglet';
   color:white;
   font-family:'Sniglet';
   margin-bottom: 30 px;
