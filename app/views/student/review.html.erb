@@ -69,18 +69,18 @@
 				<p class="text-center">Submit</p> 
 			</div>
 			<div class="form-group">
-					<%= label_tag(:description, "Describe your project process :") %>
-				  	<%= text_area :description, nil, class:"form-control", id:"ProjectDescription", rows: "4", placeholder: "Describe your project process" %>
+					<%= label_tag(:description, "Describe what you learned :") %>
+				  	<%= text_area :description, nil, class:"form-control", id:"ProjectDescription", rows: "4", placeholder: "What did you learn?" %>
 			</div>
 
 			<div class="form-group">
-					<%= label_tag("Upload a picture for the description :") %>
+					<%= label_tag("Upload a picture of your project :") %>
 	    			<input type="file" id="description_pic">
   			</div>
 
   			<a href="/student/project_submitted">
   				<div=class"submit">
-				<%= submit_tag("Submit Answer") %>
+				<%= submit_tag("Submit Project") %>
 				</div>
 			</a>
 			<div class = "bottom-space"></div>
