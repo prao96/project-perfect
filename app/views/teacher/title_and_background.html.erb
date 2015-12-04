@@ -23,7 +23,7 @@
 					<img src="<%= asset_path( 'Home-50.png' ) %>" alt="HOME" style="width:60px;height:60px;">
 				</div>
 			</a>
-			<a href="/teacher/teacher_not_implemented">
+			<a href="/teacher/settings">
 				<div class = "box settings">
 					<img src="<%= asset_path( 'Settings-50.png' ) %>" alt="SETTINGS" style="width:60px;height:60px;">
 				</div>
@@ -111,6 +111,11 @@
 					<%= label_tag("Upload a picture for step #3:") %>
 	    			<input type="file" id="step3_pic">
   				</div>
+
+  				<div class="form-group">
+					<%= label_tag(:summary, "Enter summary of project for students to review once finished :") %>
+				  	<%= text_area :summary, nil, class:"form-control", id:"Summary", rows: "4", placeholder: "Summary" %>
+				</div>
 
 	  			<%= submit_tag("Create Project") %>
 

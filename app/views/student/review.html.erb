@@ -27,11 +27,11 @@
 					<img src="<%= asset_path( 'Home-50.png' ) %>" alt="HOME" style="width:60px;height:60px;">
 				</div>
 			<% end %>
-			<a href="/student/not_implemented">
+			<%= link_to controller: "student", id: @project.id, action: "student_settings_project" do %>
 				<div class = "box settings">
 					<img src="<%= asset_path( 'Settings-50.png' ) %>" alt="SETTINGS" style="width:60px;height:60px;">
 				</div>
-			</a>
+			<% end %>
 			<a href="/student/not_implemented">
 				<div class = "box alerts">
 					<img src="<%= asset_path( 'noun_101400_cc.png' ) %>" alt="ALERTS" style="width:60px;height:60px;">
@@ -69,18 +69,22 @@
 				<p class="text-center">Submit</p> 
 			</div>
 			<div class="form-group">
-					<%= label_tag(:description, "Describe your project process :") %>
-				  	<%= text_area :description, nil, class:"form-control", id:"ProjectDescription", rows: "4", placeholder: "Describe your project process" %>
+					<%= label_tag(:description, "Describe what you learned :") %>
+				  	<%= text_area :description, nil, class:"form-control", id:"ProjectDescription", rows: "4", placeholder: "What did you learn?" %>
 			</div>
 
 			<div class="form-group">
-					<%= label_tag("Upload a picture for the description :") %>
+					<%= label_tag("Upload a picture of your project :") %>
 	    			<input type="file" id="description_pic">
   			</div>
 
   			<a href="/student/project_submitted">
   				<div=class"submit">
-				<%= submit_tag("Submit Answer") %>
+<<<<<<< HEAD
+					<%= submit_tag("Submit Answer") %>
+=======
+				<%= submit_tag("Submit Project") %>
+>>>>>>> d22327c1bacccb66dde4424218a5e4d032341b18
 				</div>
 			</a>
 			<div class = "bottom-space"></div>

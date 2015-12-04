@@ -22,11 +22,11 @@
 					<img src="<%= asset_path( 'Home-50.png' ) %>" alt="HOME" style="width:60px;height:60px;">
 				</div>
 			</a>
-			<a href="/student/not_implemented">
+			<%= link_to controller: "student", action: "student_settings_other" do %>
 				<div class = "box settings">
 					<img src="<%= asset_path( 'Settings-50.png' ) %>" alt="SETTINGS" style="width:60px;height:60px;">
 				</div>
-			</a>
+			<% end %>
 			<a href="/student/not_implemented">
 				<div class = "box alerts">
 					<img src="<%= asset_path( 'noun_101400_cc.png' ) %>" alt="ALERTS" style="width:60px;height:60px;">

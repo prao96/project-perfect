@@ -27,6 +27,7 @@ class TeacherController < ApplicationController
 		@project.description = params[:description][0]
 		@project.background = params[:background][0]
 		@project.number_of_steps = 3
+		@project.summary = params[:summary][0]
 		@project.save
 		@supply1 = Supply.new
 		@supply1.supply = params[:supply][0]

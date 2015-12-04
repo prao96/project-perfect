@@ -12,8 +12,13 @@
 	font-size: 20px;
 }
 
-.submit_tag {
-	
+.submit {
+	font-size: 35px;
+	color:black;
+}
+
+a:link {
+	color: black;
 }
 
 .submit-header {
@@ -24,4 +29,8 @@
 
 .center2 {
 	text-align:left;
+}
+
+.submit {
+	color:black;
 }

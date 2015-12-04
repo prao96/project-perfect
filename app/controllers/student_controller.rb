@@ -36,4 +36,10 @@ class StudentController < ApplicationController
 	def project_submitted
 	end
 
+	def student_settings_project
+		@project = Project.find(params[:id])
+	end
+
+	def student_settings_other
+	end
 end
