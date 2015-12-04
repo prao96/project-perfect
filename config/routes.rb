@@ -23,8 +23,12 @@ Rails.application.routes.draw do
   get 'teacher/title_and_background' => 'teacher#title_and_background'
   get 'teacher/teacher_nav' => 'teacher#teacher_nav'
   get 'teacher/teacher_not_implemented' => 'teacher#teacher_not_implemented'
-  
+  get 'teacher/settings' => 'teacher#settings'
+  get 'student/project/:id/student_settings_project' => 'student#student_settings_project'
+  get 'student/student_settings_other' => 'student#student_settings_other'
   post 'teacher/create_project' => 'teacher#create_project'
+  get 'teacher/teacher_student' => 'teacher#teacher_student'
+
 
   
   # The priority is based upon order of creation: first created -> highest priority.

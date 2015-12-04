@@ -28,3 +28,11 @@
 .space {
   height:10px;
 }
+
+.project-button {
+  height:100px;
+  font-family:'Sniglet';
+  font-size:25px!important;
+  line-height: 110px;
+  vertical-align:middle;
+}

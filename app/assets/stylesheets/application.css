@@ -19,7 +19,7 @@ body {
 }
 
 .top-margin {
-  height:125px;
+  height:130px;
 }
 
 .directional {
@@ -48,7 +48,7 @@ body {
   margin-top:-25px;*/
   color:black;
   font-family: 'Sniglet';
-  margin-top:20px;
+  margin-top:40px;
   color:#FFD930;
   font-family: 'Sniglet';
   font-weight: bold;
@@ -60,7 +60,11 @@ body {
   width: 840px;
   margin-top:15px;
 }
-
+.submit-nav {
+  z-index:1000;
+  width: 325px;
+  margin-top:15px;
+}
 .teacher-nav {
   z-index:1000;
   width: 655px;
@@ -71,7 +75,7 @@ body {
   z-index:998;
   position: fixed;
   width: 100%;
-  height: 100px;
+  height: 120px;
   width: 100%;
   top:-10px;
   padding-left: 0px!important;
@@ -100,6 +104,17 @@ body {
   margin: 5px;
 }
 
+a {
+  color:inherit;
+}
+a:hover {
+  color:inherit;
+}
+
+a:visited {
+  color:inherit;
+}
+
 .box {
   width:150px;
   height:75px;
@@ -118,7 +133,7 @@ body {
 }
 
 .main {
-  top:125px;
+  top:130px;
   height:575px;
   text-align: center;
   vertical-align: middle;
@@ -131,7 +146,7 @@ body {
 }
 
 .navigation {
-  font-size:35px;
+  font-size:25px;
   margin:auto;
   /*top: 25%;
   margin-top:-25px;*/
