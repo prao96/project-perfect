@@ -39,27 +39,23 @@
 	<div class="row">
 
 
-		<div class="col-xs-12 col-md-push-1 col-md-5 main center1"> 
-				<div class="current-projects col-md-12"> Current Projects
-					<div class="space">
-					</div>
-							<% @projects.each do |project| %>
+		<div class="col-xs-12 col-md-push-1 col-md-5 main center1" style="overflow-y: auto"> 
+				<div class="current-projects col-md-12" style="font-size:35px"> <em>Current Projects</em>
 
-								<%= link_to controller: "student", id: project.id, action: "landing" do %>
-									<div class="navigation"><%= project.title %></div>
-								<% end %>
+					<% @projects.each do |project| %>
+						<%= link_to controller: "student", id: project.id, action: "landing" do %>
+							<div button type="button" class="btn btn-default btn-lg btn-block project-button" style="white-space: normal"><%= project.title %> </div>
+							<div style="height:10px"></div>
+						<% end %>
+					<% end %>
 
-							<% end %>
-						
+					<div class="space"></div>
 				</div>
 		</div>
 		<div class="col-xs-12 col-md-push-1 col-md-5 main center1"> 
-			<div class="past-projects col-md-12"> Past Projects
-				<div class="space">
-					</div>
-
-					<div class="navigation">Build a Castle
-					</div>
+			<div class="past-projects col-md-12" style="font-size:35px"> <em> Past Projects</em>
+				<div button type="button" class="btn btn-default btn-lg btn-block project-button" style="white-space: normal"> Building A Castle </div>
+				<div style="height:10px"></div>
 			</div>						
 
 		</div>

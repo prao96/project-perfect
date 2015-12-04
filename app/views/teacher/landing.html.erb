@@ -1,4 +1,4 @@
-<% content_for :stylesheets do %>
+=<% content_for :stylesheets do %>
 	<%= stylesheet_link_tag "teacher_landing" %>
 <% end %>
 
@@ -36,20 +36,28 @@
 		</div>
 	</div>
 
+<div class="top-margin"></div>
+<div class="top-margin"></div>
+
 <div class="container-fluid" >
 	<div class="row">
 
-
-		<div class="col-xs-12 col-md-push-1 col-md-5 main center1"> 
-				<div class="current-projects col-md-12"> 
-					<a href="/teacher/create_new_project">
-						<div class="navigation">Create New Project</div>
-					</a>
-				</div>
+		<div class="col-md-8 col-md-push-2">
+			<a href="/teacher/create_new_project">
+				<button type="button" class="btn btn-default btn-lg btn-block teacher-button">Create New Project</button>
+			</a>
 		</div>
-		<div class="col-xs-12 col-md-push-1 col-md-5 main center1"> 
-			<div class="past-projects col-md-12"> Manage Classes
-			</div>
+
+	</div>
+
+	<div class="row">
+		<div style="height:25px"></div>
+	</div>
+
+	<div class="row">
+
+		<div class="col-md-8 col-md-push-2">
+				<button type="button" class="btn btn-default btn-lg btn-block teacher-button">Manage Classes</button>
 		</div>
 	</div>
 </div>
